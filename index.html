@@ -3,158 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Digital Resume</title>
-    
+    <title>AWS Cloud Computing</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-    /* Basic Reset */
-body, h1, h2, h3, p, ul {
+    body {
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
 }
 
-/* Body & Background */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background: #e2e2e2;
-    padding: 20px;
-    color: #333;
-}
-
-/* Header */
-header {
-    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
+/* Header styling */
+.header {
+    background-image: url('https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_aws.jpg'); /* Replace with actual AWS background image */
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 5px;
+.header .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    border-radius: 10px;
 }
 
-header p {
-    font-size: 1.2em;
-    font-weight: 300;
-}
-
-/* Section Styling */
-section {
-    background: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-section h2 {
-    color: #6a11cb;
-    margin-bottom: 10px;
-}
-
-/* About Section */
-.about p {
-    font-size: 1.1em;
-    line-height: 1.8;
-    color: #666;
-}
-
-/* Experience Section */
-.experience article {
+.header h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.experience h3, .education p {
-    font-weight: bold;
+.header h2 {
+    font-size: 1.5rem;
 }
-
-.experience ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-.dates {
-    font-style: italic;
-    color: #2575fc;
-    margin-bottom: 5px;
-}
-
-/* Education Section */
-.education p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Footer */
-footer {
+.content {
+    display: flex;
+    padding: 50px;
+    background-color: #000;
     text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+}
+
+.image-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-content img {
     width: 100%;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
+    max-width: 500px;
 }
 
-footer a {
-    color: #50bcdf;
-    text-decoration: none;
+/* Services section styling */
+.services {
+    padding: 50px;
+    background-color: #222;
+    text-align: center;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 
+.service {
+    margin-bottom: 30px;
+}
+
+.service h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1.2rem;
+}
 </style>
 <body>
-    <header>
-        <h1>Agam Kushwaha</h1>
-        <p>DevOps Engineer | Cloud Engineer</p>
-        <p>Email: mail.agamkushwaha@gmail.com | Phone: (123) 456-7890</p>
+    <header class="header">
+        <div class="overlay">
+            <h1>Unlimited Cloud Computing Resources</h1>
+            <h2>Scale Your Applications Globally with AWS</h2>
+        </div>
     </header>
-
-    <section class="about">
-        <h2>About Me</h2>
-        <p>I am a passionate Cloud/Devops Engineer with over  1 years of experience in building Cloud based Infrastructure. Specializing in both frontend and backend development, I am dedicated to crafting clean, efficient, and functional code.</p>
+    <section class="content">
+        <div class="text-content">
+            <h2>Enjoy on Your Devices</h2>
+            <p>Deploy applications on AWS and take advantage of a wide range of cloud services. Whether you need compute power, storage solutions, or advanced data analytics, AWS has the tools to help you build sophisticated applications with increased flexibility, scalability, and reliability.</p>
+        </div>
+        <div class="image-content">
+            <img src="https://www.hinto.com/sites/default/files/2024-01/aws_1_0.png" alt="AWS Devices"> <!-- Replace with actual AWS devices image -->
+        </div>
     </section>
-
-    <section class="experience">
-        <h2>Professional Experience</h2>
-        <article>
-            <h3>Cloud Engineer— XYZ Corp</h3>
-            <p class="dates">January 2024 - Present</p>
-            <ul>
-                <li>Lead the development of a scalable web application used by millions of users.</li>
-                <li>Implemented new features and optimized existing code to improve application performance.</li>
-                <li>Worked closely with the design team to refine user interface and user experience elements.</li>
-            </ul>
-        </article>
-        <article>
-            <h3>Junior Cloud Engineer— ABC Ltd</h3>
-            <p class="dates">June 2023</p>
-            <ul>
-                <li>Developed multiple high-traffic e-commerce websites using modern JavaScript frameworks.</li>
-                <li>Collaborated on the creation of RESTful APIs for mobile application integrations.</li>
-                <li>Conducted code reviews and mentored junior developers.</li>
-            </ul>
-        </article>
+    <section class="services">
+        <h2>Key AWS Services</h2>
+        <div class="service">
+            <h3>Amazon EC2</h3>
+            <p>Secure and resizable compute capacity in the cloud. Launch applications when needed without upfront commitments.</p>
+        </div>
+        <div class="service">
+            <h3>Amazon S3</h3>
+            <p>Object storage built to store and retrieve any amount of data from anywhere. Highly durable and scalable.</p>
+        </div>
+        <div class="service">
+            <h3>AWS Lambda</h3>
+            <p>Run code without provisioning or managing servers. Pay only for the compute time you consume.</p>
+        </div>
+        <div class="service">
+            <h3>Amazon RDS</h3>
+            <p>Set up, operate, and scale a relational database in the cloud with just a few clicks.</p>
+        </div>
     </section>
-
-    <section class="education">
-        <h2>Education</h2>
-        <p>Bachelor in Computer Application</p>
-        <p class="dates">CCSU 2021-2024</p>
-    </section>
-
-    <footer>
-        <p>Find me on <a href="https://www.linkedin.com">LinkedIn</a> | <a href="https://github.com">GitHub</a></p>
-    </footer>
 </body>
 </html>
-
